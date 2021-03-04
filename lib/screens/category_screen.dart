@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mealsapp/constants/dummy_category_list.dart';
-import 'package:mealsapp/models/category_item.dart';
+import 'package:mealsapp/widgets/category_item.dart';
 
 class CategoryScreen extends StatelessWidget {
+  // static const ref = "/";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,6 +14,7 @@ class CategoryScreen extends StatelessWidget {
         padding: EdgeInsets.all(10),
         children: DUMMY_CATEGORIES
             .map((ct) => CategoryItem(
+                  id: ct.id,
                   title: ct.title,
                   color: ct.color,
                 ))
