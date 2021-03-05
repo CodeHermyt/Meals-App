@@ -3,13 +3,13 @@ import 'package:mealsapp/constants/dummy_category_list.dart';
 import 'package:mealsapp/widgets/category_item.dart';
 
 class CategoryScreen extends StatelessWidget {
-  // static const ref = "/";
+  static const ref = "/category-screen";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Meals"),
-      ),
+      // appBar: AppBar(
+      //   title: Text("Meals"),
+      // ),
       body: GridView(
         padding: EdgeInsets.all(10),
         children: DUMMY_CATEGORIES

@@ -43,6 +43,7 @@ class CategoryItem extends StatelessWidget {
         ),
         child: Text(
           title,
+          // ignore: deprecated_member_use
           style: Theme.of(context).textTheme.title,
         ),
       ),

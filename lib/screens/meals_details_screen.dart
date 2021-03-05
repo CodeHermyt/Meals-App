@@ -105,6 +105,7 @@ class ContentTitle extends StatelessWidget {
       padding: EdgeInsets.all(10),
       child: Text(
         title,
+        // ignore: deprecated_member_use
         style: Theme.of(context).textTheme.title,
       ),
     );
